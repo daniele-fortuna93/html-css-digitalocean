@@ -1,0 +1,65 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+/* nav */
+.header__top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 70px;
+  line-height: 70px;
+}
+.header__logo img{
+  width: 100%;
+}
+.main__nav ul,
+.second__nav ul{
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.main__nav li,
+.second__nav li{
+  display: inline-block;
+  vertical-align: middle;
+}
+.main__nav li a,
+.second__nav li a{
+  color: #000;
+  padding: 5px 10px 0;
+}
+.main__nav li a:hover,
+.second__nav li a:hover{
+  color: #006aff;
+  text-decoration: none;
+}
+#sign__up{
+  border: 1px solid #006aff;
+  border-radius: 5px;
+  color: #006aff;
+  padding: 10px;
+}
+#sign__up:hover{
+  background-color: #006aff;
+  color: #fff;
+}
+.btn__ham{
+  background-color: transparent;
+  color: #006aff;
+  font-size: 18px;
+}
+.btn__ham:hover,
+.btn__ham:active:focus,
+.btn__ham:focus{
+  color: #006aff;
+  outline: none;
+  box-shadow: none;
+}
+/* /nav */
+/* responsive */
+@media screen and (max-width:768px) {
+  .header__logo img{
+    min-width: 150px;
+  }
+}
