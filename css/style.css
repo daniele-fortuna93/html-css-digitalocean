@@ -227,6 +227,34 @@ p{
   padding-bottom: 15px;
 }
 /* /main__description */
+/* main__developers */
+#main__developers{
+  padding: 50px 0;
+}
+.main__developers__box{
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+.main__developers__box img{
+  width: 80%;
+}
+.arrow{
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.left{
+  left: 0;
+}
+.right{
+  right: 0;
+}
+.main__description__box__p{
+  margin: 15px 0;
+}
+/* /main__developers */
 /* /main */
 
 /* responsive */
@@ -239,6 +267,9 @@ p{
   .main__logo__box{
     width: calc((100% / 2) - 4px);
   }
+  .main__description__box__p{
+    margin: 15px 0 50px;
+  }
 }
 @media screen and (max-width:767px) {
   .header__logo img{
@@ -250,6 +281,9 @@ p{
   }
   .main__logo__box{
     width: 100%;
+  }
+  .arrow{
+    display: none;
   }
 }
 /* /responsive */
