@@ -12,8 +12,16 @@ h1{
   font-size: 55px;
   font-weight: 700;
 }
+h2{
+  font-size: 36px;
+  color: #031b4e;
+}
 h3{
   font-size: 30px;
+}
+h5{
+  font-size: 18px;
+  color: #031b4e;
 }
 h6{
   color: #5b6987;
@@ -21,14 +29,34 @@ h6{
   text-transform: uppercase;
   margin: 20px 0;
 }
+p{
+  color: #5b6987;
+}
 .header__jumbotron p{
   font-size: 24px;
   font-weight: 300;
+}
+.form__jumbotron p{
+  font-size: 15px;
+}
+.section__p{
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+.main__description__box p{
+  font-size: 16px;
 }
 /* /typo */
 /* mix */
 .bg__grey{
   background-color: #f3f5f9;
+}
+.mb_20{
+  margin-bottom: 20px;
+}
+.mb_10{
+  margin-bottom: 10px;
 }
 /* /mix */
 /* btn */
@@ -61,6 +89,22 @@ h6{
   top: 50%;
   transform: translateY(-50%);
   width: 15px;
+}
+.btn__description{
+  display: block;
+  margin-top: -1px;
+  border-left: 1px solid #ddd;
+  border-radius: 0;
+  background-color: transparent;
+  padding: 15px 10px;
+  color: rgba(3, 27, 78, 0.6);
+}
+.btn__description:focus,
+.btn__description:active:focus{
+  color: rgb(3, 27, 78);
+  box-shadow: none;
+  border-left: 1px solid #006aff;
+  outline: none;
 }
 /* /btn */
 /* nav */
@@ -175,6 +219,14 @@ h6{
   text-decoration: none;
 }
 /* /main__logo */
+/* main__description */
+#main__description{
+  padding: 50px 0;
+}
+.main__description__box{
+  padding-bottom: 15px;
+}
+/* /main__description */
 /* /main */
 
 /* responsive */
@@ -189,12 +241,12 @@ h6{
   }
 }
 @media screen and (max-width:767px) {
+  .header__logo img{
+    min-width: 150px;
+  }
   .header__jumbotron h1,
   .header__jumbotron p{
     text-align: center;
-  }
-  .header__logo img{
-    min-width: 150px;
   }
   .main__logo__box{
     width: 100%;
