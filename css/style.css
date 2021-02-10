@@ -47,10 +47,21 @@ p{
 .main__section__box p{
   font-size: 16px;
 }
+#main__world h2{
+  color: #fff;
+}
+#main__world p{
+  color: #fff;
+  opacity: 0.6;
+  font-weight: 300;
+}
 /* /typo */
 /* mix */
 .bg__grey{
   background-color: #f3f5f9;
+}
+.bg__blue{
+  background-color: rgb(3, 27, 78);
 }
 .mb_40{
   margin-bottom: 40px;
@@ -61,9 +72,21 @@ p{
 .mb_10{
   margin-bottom: 10px;
 }
+.clearfix{
+  display: block;
+  content: '';
+  clear: both;
+}
+.float_l{
+  float: left;
+}
+.float_r{
+  float: right;
+}
 #main__description,
 #main__developers,
-#main__features
+#main__features,
+#main__world
 {
   padding: 50px 0;
 }
@@ -254,6 +277,29 @@ p{
   right: 0;
 }
 /* /main__developers */
+/* main__world */
+#main__world{
+  background-image: url('../img/bg-map.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main__world__box{
+  padding: 5px 6px;
+}
+.main__world__box:not(:first-child){
+  border-top: 1px solid #fff;
+}
+#main__world .main__section__link{
+  margin: 0;
+  color: rgb(0, 215, 210);
+}
+#main__world .main__section__link i{
+  margin-left: 5px;
+}
+.world__box{
+  width: 80px;
+}
+/* /main__world */
 /* /main */
 
 /* responsive */
@@ -265,6 +311,9 @@ p{
 @media screen and (max-width:991px) {
   .main__logo__box{
     width: calc((100% / 2) - 4px);
+  }
+  #main__world .col-xs-12.col-md-6:first-child{
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width:767px) {
