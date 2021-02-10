@@ -52,6 +52,9 @@ p{
 .bg__grey{
   background-color: #f3f5f9;
 }
+.mb_40{
+  margin-bottom: 40px;
+}
 .mb_20{
   margin-bottom: 20px;
 }
@@ -169,7 +172,7 @@ p{
   background-image: url('../img/bg-jumbotron.svg');
   background-size: cover;
   background-position: center;
-  padding: 80px 0;
+  padding: 90px 0;
 }
 .box__jumbotron{
   background-color: #fff;
@@ -255,6 +258,11 @@ p{
   margin: 15px 0;
 }
 /* /main__developers */
+/* main__features */
+#main__features{
+  padding: 50px 0;
+}
+/* /main__features */
 /* /main */
 
 /* responsive */
@@ -284,6 +292,13 @@ p{
   }
   .arrow{
     display: none;
+  }
+  #main__features .main__description__box__p,
+  #main__features .main__description__box{
+    margin: 15px 0;
+  }
+  #main__features .main__logo__link{
+    margin-top: 0;
   }
 }
 /* /responsive */
