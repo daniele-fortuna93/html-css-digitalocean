@@ -55,6 +55,9 @@ p{
   opacity: 0.6;
   font-weight: 300;
 }
+#main__development p{
+  font-size: 24px;
+}
 /* /typo */
 /* mix */
 .bg__grey{
@@ -86,7 +89,8 @@ p{
 #main__description,
 #main__developers,
 #main__features,
-#main__world
+#main__world,
+#main__development
 {
   padding: 50px 0;
 }
@@ -103,6 +107,13 @@ p{
 }
 .main__section__box{
   padding-bottom: 15px;
+}
+.main__developers__box,
+.main__development__box{
+  position: relative;
+  width: 60%;
+  min-width: 300px;
+  margin: auto;
 }
 /* /mix */
 /* btn */
@@ -256,11 +267,6 @@ p{
 }
 /* /main__logo */
 /* main__developers */
-.main__developers__box{
-  position: relative;
-  width: 60%;
-  margin: auto;
-}
 .main__developers__box img{
   width: 80%;
 }
@@ -300,6 +306,22 @@ p{
   width: 80px;
 }
 /* /main__world */
+/* main__development */
+.main__development__box{
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+.main__development__small_box{
+  background-color: #fff;
+  width: 80%;
+  padding: 40px 0;
+  margin: 50px auto ;
+}
+#main__development .main__section__link{
+  display: block;
+}
+/* /main__development */
 /* /main */
 
 /* responsive */
@@ -335,6 +357,9 @@ p{
   }
   #main__features .main__section__link{
     margin-top: 0;
+  }
+  .main__development__small_box img{
+    width: 95%;
   }
 }
 /* /responsive */
