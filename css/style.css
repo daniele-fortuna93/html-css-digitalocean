@@ -44,7 +44,7 @@ p{
   font-weight: 300;
   margin-bottom: 50px;
 }
-.main__description__box p{
+.main__section__box p{
   font-size: 16px;
 }
 /* /typo */
@@ -60,6 +60,26 @@ p{
 }
 .mb_10{
   margin-bottom: 10px;
+}
+#main__description,
+#main__developers,
+#main__features
+{
+  padding: 50px 0;
+}
+.main__section__link{
+  display: inline-block;
+  margin-top: 20px;
+}
+.main__section__link i{
+  margin-left: 15px;
+  vertical-align: middle;
+}
+.main__section__link:hover{
+  text-decoration: none;
+}
+.main__section__box{
+  padding-bottom: 15px;
 }
 /* /mix */
 /* btn */
@@ -103,7 +123,8 @@ p{
   color: rgba(3, 27, 78, 0.6);
 }
 .btn__description:focus,
-.btn__description:active:focus{
+.btn__description:active:focus,
+.btn__description:hover{
   color: rgb(3, 27, 78);
   box-shadow: none;
   border-left: 1px solid #006aff;
@@ -193,7 +214,7 @@ p{
   color: #808080;
 }
 .form__terms:hover,
-.main__logo__link:hover{
+.main__section__link:hover{
   color: #006aff;
 }
 /* /jumbotron */
@@ -210,30 +231,8 @@ p{
 .main__logo__box img:hover{
   cursor: pointer;
 }
-.main__logo__link{
-  display: inline-block;
-  margin-top: 20px;
-}
-.main__logo__link i{
-  margin-left: 15px;
-  vertical-align: middle;
-}
-.main__logo__link:hover{
-  text-decoration: none;
-}
 /* /main__logo */
-/* main__description */
-#main__description{
-  padding: 50px 0;
-}
-.main__description__box{
-  padding-bottom: 15px;
-}
-/* /main__description */
 /* main__developers */
-#main__developers{
-  padding: 50px 0;
-}
 .main__developers__box{
   position: relative;
   width: 60%;
@@ -254,15 +253,7 @@ p{
 .right{
   right: 0;
 }
-.main__description__box__p{
-  margin: 15px 0;
-}
 /* /main__developers */
-/* main__features */
-#main__features{
-  padding: 50px 0;
-}
-/* /main__features */
 /* /main */
 
 /* responsive */
@@ -274,9 +265,6 @@ p{
 @media screen and (max-width:991px) {
   .main__logo__box{
     width: calc((100% / 2) - 4px);
-  }
-  .main__description__box__p{
-    margin: 15px 0 50px;
   }
 }
 @media screen and (max-width:767px) {
@@ -293,11 +281,10 @@ p{
   .arrow{
     display: none;
   }
-  #main__features .main__description__box__p,
-  #main__features .main__description__box{
+  #main__features .main__section__box{
     margin: 15px 0;
   }
-  #main__features .main__logo__link{
+  #main__features .main__section__link{
     margin-top: 0;
   }
 }
