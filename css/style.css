@@ -59,6 +59,21 @@ p{
 #main__development p{
   font-size: 24px;
 }
+footer p,
+.social__link a,
+.footer__ul li a{
+  color: #fff;
+  opacity: 0.4;
+  line-height: 90%;
+}
+.social__link a{
+  font-size: 18px;
+}
+.footer__ul li:first-child a{
+  color: #fff;
+  opacity: 1;
+  font-weight: 500;
+}
 /* /typo */
 /* mix */
 .bg__grey{
@@ -95,8 +110,8 @@ p{
 #main__features,
 #main__world,
 #main__development,
-#main__get_started_now
-{
+#main__get_started_now,
+footer{
   padding: 50px 0;
 }
 .main__section__link{
@@ -352,6 +367,43 @@ p{
 /* /main__get_started_now */
 /* /main */
 
+/* footer */
+footer{
+  background-color: hsl(220,95%,8%);
+}
+footer img{
+  opacity: 0.8:
+}
+.social__link,
+.footer__ul{
+  padding: 0;
+  margin: 10px 0 ;
+}
+.social__link li{
+  display: inline-block;
+  margin-right: 8px;
+}
+.social__link li a:hover,
+.social__link li a:focus{
+  color: #fff;
+  opacity: 1;
+  outline: none;
+}
+.footer__ul li{
+  margin-top: 5px;
+  list-style-type: none;
+}
+.footer__ul li a:hover,
+.footer__ul li a:focus{
+  text-decoration: none;
+  outline: none;
+  opacity: 0.8;
+}
+.footer__ul li:first-child a:hover{
+  opacity: 1;
+  font-weight: 600;
+}
+/* /footer */
 /* responsive */
 @media screen and (max-width:1199px) {
   .main__logo__box{
