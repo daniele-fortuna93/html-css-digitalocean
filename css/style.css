@@ -416,7 +416,7 @@ footer img{
 .shark__container{
   position: fixed;
   opacity: 0.9;
-  right: 30px;
+  right: 40px;
   bottom: 40px;
   z-index: 20;
 }
