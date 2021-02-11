@@ -74,6 +74,15 @@ footer p,
   opacity: 1;
   font-weight: 500;
 }
+.shark__text p{
+  color: #000;
+  opacity: 1;
+  margin-bottom: 0;
+}
+.notification span{
+  vertical-align: text-top;
+  font-size: 10px;
+}
 /* /typo */
 /* mix */
 .bg__grey{
@@ -403,6 +412,60 @@ footer img{
   opacity: 1;
   font-weight: 600;
 }
+/* shark */
+.shark__container{
+  position: fixed;
+  opacity: 0.9;
+  right: 30px;
+  bottom: 40px;
+  z-index: 20;
+}
+.shark{
+  background-color: #006aff;
+  border-radius: 10px;
+  padding: 3px 0;
+  left: 170px;
+  max-width: 80px;
+}
+.shark,
+.shark__text{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.shark__text{
+  background-color: #fff;
+  max-width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px 2px #808080;
+  padding: 10px;
+  right: 80px;
+}
+.text__triangle{
+  position: absolute;
+  bottom: 10px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border-left: 10px solid #fff;
+  border-top:   10px solid transparent;
+  border-bottom:  10px solid transparent;
+}
+.shark img{
+  width: 80px;
+}
+.notification{
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+/* /shark */
 /* /footer */
 /* responsive */
 @media screen and (max-width:1199px) {
@@ -440,6 +503,27 @@ footer img{
   }
   .main__development__small_box img{
     width: 95%;
+  }
+  .shark__container{
+    left: 30px;
+    bottom: 40px;
+  }
+  .shark{
+    margin-bottom: 15px;
+  }
+  .shark,
+  .shark__text{
+    display: block;
+    left: 0;
+    right: 0;
+  }
+  .text__triangle{
+    top: -10px;
+    left: 10px;
+    border-bottom: 10px solid #fff;
+    border-left:   10px solid transparent;
+    border-right:  10px solid transparent;
+    border-top: none;
   }
 }
 /* /responsive */
