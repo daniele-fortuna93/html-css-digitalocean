@@ -47,10 +47,6 @@ p{
 .main__section__box p{
   font-size: 16px;
 }
-#main__world h2,
-#main__get_started_now h2{
-  color: #fff;
-}
 #main__world p{
   color: #fff;
   opacity: 0.6;
@@ -440,6 +436,7 @@ footer img{
   box-shadow: 0 1px 4px 2px #808080;
   padding: 10px;
   right: 80px;
+  filter: drop-shadow(0 1px 4px #808080);
 }
 .shark__text::before{
   content: '';
